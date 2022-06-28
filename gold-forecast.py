@@ -34,7 +34,7 @@ prediction = model.predict()
 forecast = prediction.forecast
 
 
-print("BitCoin price forecasts")
+print("Gold price forecasts")
 forecast = forecast.reset_index()
 print(forecast)
 
@@ -44,7 +44,7 @@ x2, y2 = forecast['index'], forecast['Close']
 plt.xlabel("date")
 plt.ylabel("price")
 
-plt.title("BitCoin price")
+plt.title("Gold price")
 
 plt.plot(x1, y1, label='data')
 plt.plot(x2, y2, color='red', label='forecast')
